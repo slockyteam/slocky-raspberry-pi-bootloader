@@ -71,7 +71,7 @@
 				"flow_control": false,
 				"web_socket_update_data_interval": 60000,
 				"data_history_enabled": true,
-				"data_history_saving_interval": 3600000,
+				"data_history_saving_interval": 600000,
 				"status_led_gpio_pin": 18
 			}
 		}, {
@@ -89,7 +89,7 @@
 				"flow_control": false,
 				"web_socket_update_data_interval": 60000,
 				"data_history_enabled": true,
-				"data_history_saving_interval": 3600000,
+				"data_history_saving_interval": 600000,
 				"status_led_gpio_pin": 23
 			}
 		}
