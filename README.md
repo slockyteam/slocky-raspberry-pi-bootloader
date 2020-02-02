@@ -1,4 +1,4 @@
-# Slocky Raspberry Configuration
+# Slocky Raspberry đuration
 
 Created by Luka Penger
 
@@ -21,8 +21,8 @@ SD Card format: `ExFat`
 dtparam=spi=on
 dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25
 dtoverlay=spi-bcm2835-overlay
-
 enable_uart=1
+dtoverlay=w1-gpio,gpiopin=24
 ```
 
 3. Edit cmdline.txt file:
