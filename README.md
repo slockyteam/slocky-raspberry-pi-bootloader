@@ -23,6 +23,9 @@ dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25
 dtoverlay=spi-bcm2835-overlay
 enable_uart=1
 dtoverlay=w1-gpio,gpiopin=24
+
+arm_freq=800
+core_freq=250
 ```
 
 3. Edit cmdline.txt file:
