@@ -285,9 +285,12 @@ wpa=2
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
-ssid=Slocky-2539
 ignore_broadcast_ssid=0
+
+#START
+ssid=Slocky-2539
 wpa_passphrase=25392539
+#END
 ```
 
 6. We now need to tell the system where to find this configuration file.
