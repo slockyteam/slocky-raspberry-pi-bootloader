@@ -202,9 +202,9 @@ ipcp-max-failure 30
 # Ask the peer for up to 2 DNS server addresses
 usepeerdns
 
+#START
 noauth
-user "mobitel"
-password "internet"
+#END
 ```
 
 ### 16. Find USB ports for serial devices and LTE modem:
