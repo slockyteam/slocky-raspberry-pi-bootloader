@@ -367,7 +367,7 @@ iface can0 can static
 cd /root
 git clone https://github.com/davidsblog/rCPU
 cd rCPU/rCPU/
-sudo make install
+make
 ```
 
 ### 17. Install can:
@@ -395,6 +395,8 @@ exec 1>&2                      # send stdout to the same log file
 set -x
 
 (cd /root/bootloader; sudo sh start.sh;)
+
+(cd /root/rCPU/rCPU; sudo ./rcpu 81 &)
 
 exit 0
 ```
