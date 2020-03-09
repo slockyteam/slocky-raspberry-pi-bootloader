@@ -15,13 +15,14 @@
 	"udp_server_port": 10011,
 	"services": [
 		{
-			"service_alias": "Relay 1",
+			"service_alias": "Relay",
 			"service_type": "Relay",
 			"service_folder": "Relay 1",
 			"local_api_server_port": 91,
 			"settings": {
 				"relays": [
-					{
+					{	
+						"type": "relay",
 						"relay_gpio_pin": 20,
 						"mode": "on_and_off",
 						"default_state": 0,
@@ -36,13 +37,14 @@
 				"web_socket_update_data_interval": 60000
 			}
 		}, {
-			"service_alias": "Relay 2",
+			"service_alias": "Keylock",
 			"service_type": "Relay",
 			"service_folder": "Relay 2",
 			"local_api_server_port": 92,
 			"settings": {
 				"relays": [
-					{
+					{	
+						"type": "keylock",
 						"relay_gpio_pin": 21,
 						"mode": "on_and_off",
 						"default_state": 0,
