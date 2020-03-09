@@ -22,7 +22,7 @@
 			"settings": {
 				"relays": [
 					{	
-						"type": "Relay",
+						"type": "relay",
 						"relay_gpio_pin": 20,
 						"mode": "on_and_off",
 						"default_state": 0,
@@ -44,7 +44,7 @@
 			"settings": {
 				"relays": [
 					{	
-						"type": "Keylock",
+						"type": "keylock",
 						"relay_gpio_pin": 21,
 						"mode": "on_and_off",
 						"default_state": 0,
