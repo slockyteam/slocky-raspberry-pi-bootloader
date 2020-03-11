@@ -15,7 +15,7 @@
 	"udp_server_port": 10011,
 	"services": [
 		{
-			"service_alias": "Relay",
+			"service_alias": "Keylock",
 			"service_type": "Relay",
 			"service_folder": "Relay 1",
 			"local_api_server_port": 91,
