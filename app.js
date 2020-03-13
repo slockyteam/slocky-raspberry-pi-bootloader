@@ -968,7 +968,7 @@ function start() {
 		
 		timer = setInterval(function() {
 			checkForFirmwareOnServer();
-		}, SharedManager.deviceSettings.bootloader_check_firmware_on_server_interval);
+		}, SharedManager.bootloaderSettings.check_firmware_on_server_interval);
 	}
 };
 
