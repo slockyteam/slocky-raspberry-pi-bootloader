@@ -54,7 +54,7 @@
 			}
 		}, {
 			"service_alias": "BMV-700",
-			"service_type": "BMV-70x",
+			"service_type": "BMV-7xx",
 			"service_folder": "BMV-700",
 			"manufacturer": "Victron Energy",
 			"local_api_server_port": 93,
