@@ -10,9 +10,9 @@
 	"local_api_server_port": 88,
 	"udp_server_port": 10011,
 	"services": [ {
-			"service_alias": "Oceanled X8",
-			"service_type": "Oceanled",
-			"service_folder": "Oceanled",
+			"service_alias": "OceanLED X8",
+			"service_type": "OceanLED",
+			"service_folder": "OceanLED",
 			"local_api_server_port": 91,
 			"settings": {
 				"relay": {
