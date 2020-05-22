@@ -9,38 +9,44 @@
 	"local_web_server_port": 80,
 	"local_api_server_port": 88,
 	"udp_server_port": 10011,
-	"services": [
-		{
+	"services": [ {
+			"service_alias": "Oceanled X8",
+			"service_type": "Oceanled",
+			"service_folder": "Oceanled",
+			"local_api_server_port": 91,
+			"settings": {
+				"relay": {
+					"type": "relay",
+					"relay_gpio_pin": 21,
+					"mode": "on_and_off",
+					"default_state": 0,
+					"trigger_time": 2000,
+					"feedback_enable": false,
+					"feedback_gpio_pin": 0,
+					"feedback_timout": 2000,
+					"gpio_true_value": 0,
+					"gpio_false_value": 1
+				},
+				"serial_port": {
+					"port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S3-if00-port0",
+					"baud_rate": 250000,
+					"databits": 8,
+					"parity": "none",
+					"stop_bits": 1,
+					"flow_control": false
+				},
+				"status_led_gpio_pin": 22
+			}
+		}, {
 			"service_alias": "Keylock",
 			"service_type": "Relay",
 			"service_folder": "Relay 1",
-			"local_api_server_port": 91,
+			"local_api_server_port": 92,
 			"settings": {
 				"relays": [
 					{	
 						"type": "relay",
 						"relay_gpio_pin": 20,
-						"mode": "on_and_off",
-						"default_state": 0,
-						"trigger_time": 2000,
-						"feedback_enable": false,
-						"feedback_gpio_pin": 0,
-						"feedback_timout": 2000,
-						"gpio_true_value": 0,
-						"gpio_false_value": 1
-					}
-				]
-			}
-		}, {
-			"service_alias": "Relay",
-			"service_type": "Relay",
-			"service_folder": "Relay 2",
-			"local_api_server_port": 92,
-			"settings": {
-				"relays": [
-					{	
-						"type": "keylock",
-						"relay_gpio_pin": 21,
 						"mode": "on_and_off",
 						"default_state": 0,
 						"trigger_time": 2000,
@@ -59,12 +65,14 @@
 			"manufacturer": "Victron Energy",
 			"local_api_server_port": 93,
 			"settings": {
-				"serial_port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S1-if00-port0",
-				"baud_rate": 19200,
-				"databits": 8,
-				"parity": "none",
-				"stop_bits": 1,
-				"flow_control": false,
+				"serial_port": {
+					"port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S1-if00-port0",
+					"baud_rate": 19200,
+					"databits": 8,
+					"parity": "none",
+					"stop_bits": 1,
+					"flow_control": false
+				},
 				"status_led_gpio_pin": 18
 			}
 		}, {
@@ -74,12 +82,14 @@
 			"manufacturer": "Victron Energy",
 			"local_api_server_port": 94,
 			"settings": {
-				"serial_port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S2-if00-port0",
-				"baud_rate": 19200,
-				"databits": 8,
-				"parity": "none",
-				"stop_bits": 1,
-				"flow_control": false,
+				"serial_port": {
+					"port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S2-if00-port0",
+					"baud_rate": 19200,
+					"databits": 8,
+					"parity": "none",
+					"stop_bits": 1,
+					"flow_control": false
+				},
 				"status_led_gpio_pin": 23
 			}
 		}
