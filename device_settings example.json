@@ -1,0 +1,101 @@
+{
+	"hardware": "Raspberry Pi 4",
+	"hardware_version": "1.0.0",
+	"device_identifier": "d47EB0QtnEKEDAXTIzDu",
+	"device_alias": "Slocky-2539",
+	"web_socket_url": "wss://api-staging.slocky.com",
+	"api_server_url": "https://api-staging.slocky.com",
+	"cpu_monitoring_port": "81",
+	"local_web_server_port": 80,
+	"local_api_server_port": 88,
+	"udp_server_port": 10011,
+	"services": [
+		{
+			"service_alias": "Keylock",
+			"service_type": "Relay",
+			"service_folder": "Relay 1",
+			"local_api_server_port": 91,
+			"settings": {
+				"relays": [
+					{	
+						"type": "relay",
+						"relay_gpio_pin": 20,
+						"mode": "on_and_off",
+						"default_state": 0,
+						"trigger_time": 2000,
+						"feedback_enable": false,
+						"feedback_gpio_pin": 0,
+						"feedback_timout": 2000,
+						"gpio_true_value": 0,
+						"gpio_false_value": 1
+					}
+				]
+			}
+		}, {
+			"service_alias": "Relay",
+			"service_type": "Relay",
+			"service_folder": "Relay 2",
+			"local_api_server_port": 92,
+			"settings": {
+				"relays": [
+					{	
+						"type": "keylock",
+						"relay_gpio_pin": 21,
+						"mode": "on_and_off",
+						"default_state": 0,
+						"trigger_time": 2000,
+						"feedback_enable": false,
+						"feedback_gpio_pin": 0,
+						"feedback_timout": 2000,
+						"gpio_true_value": 0,
+						"gpio_false_value": 1
+					}
+				]
+			}
+		}, {
+			"service_alias": "BMV-700",
+			"service_type": "BMV-7xx",
+			"service_folder": "BMV-700",
+			"manufacturer": "Victron Energy",
+			"local_api_server_port": 93,
+			"settings": {
+				"serial_port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S1-if00-port0",
+				"baud_rate": 19200,
+				"databits": 8,
+				"parity": "none",
+				"stop_bits": 1,
+				"flow_control": false,
+				"status_led_gpio_pin": 18
+			}
+		}, {
+			"service_alias": "BlueSolar MPPT 75/15",
+			"service_type": "BlueSolar MPPT",
+			"service_folder": "BlueSolar MPPT",
+			"manufacturer": "Victron Energy",
+			"local_api_server_port": 94,
+			"settings": {
+				"serial_port": "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_S2-if00-port0",
+				"baud_rate": 19200,
+				"databits": 8,
+				"parity": "none",
+				"stop_bits": 1,
+				"flow_control": false,
+				"status_led_gpio_pin": 23
+			}
+		}
+	],
+   "lcd": {
+	   "rs": 12,
+	   "e": 16,
+	   "data": [17, 4, 3, 2],
+	   "cols": 20,
+	   "rows": 4
+	},
+	"lte_modem": {
+		"ttyUSB0": "/dev/serial/by-id/usb-Android_Android-if00-port0",
+		"ttyUSB1": "/dev/serial/by-id/usb-Android_Android-if01-port0",
+		"ttyUSB2": "/dev/serial/by-id/usb-Android_Android-if02-port0",
+		"ttyUSB3": "/dev/serial/by-id/usb-Android_Android-if03-port0",
+		"baud_rate": 115200
+	}
+}
