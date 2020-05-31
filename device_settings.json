@@ -11,6 +11,48 @@
 	"udp_server_port": 10011,
 	"services": [
 		{
+			"service_alias": "Relay 1",
+			"service_type": "Relay",
+			"service_folder": "Relay 1",
+			"local_api_server_port": 91,
+			"settings": {
+				"relays": [
+					{	
+						"type": "relay",
+						"relay_gpio_pin": 20,
+						"mode": "on_and_off",
+						"default_state": 0,
+						"trigger_time": 2000,
+						"feedback_enable": false,
+						"feedback_gpio_pin": 0,
+						"feedback_timout": 2000,
+						"gpio_true_value": 0,
+						"gpio_false_value": 1
+					}
+				]
+			}
+		}, {
+			"service_alias": "Relay 2",
+			"service_type": "Relay",
+			"service_folder": "Relay 2",
+			"local_api_server_port": 92,
+			"settings": {
+				"relays": [
+					{	
+						"type": "relay",
+						"relay_gpio_pin": 21,
+						"mode": "on_and_off",
+						"default_state": 0,
+						"trigger_time": 2000,
+						"feedback_enable": false,
+						"feedback_gpio_pin": 0,
+						"feedback_timout": 2000,
+						"gpio_true_value": 0,
+						"gpio_false_value": 1
+					}
+				]
+			}
+		}, {
 			"service_alias": "BMV-700",
 			"service_type": "BMV-7xx",
 			"service_folder": "BMV-700",
