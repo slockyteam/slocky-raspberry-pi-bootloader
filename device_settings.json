@@ -67,7 +67,7 @@
 					"stop_bits": 1,
 					"flow_control": false
 				},
-				"status_led_gpio_pin": 18
+				"status_led_gpio_pin": 22
 			}
 		}, {
 			"service_alias": "BlueSolar MPPT 75/15",
@@ -84,7 +84,7 @@
 					"stop_bits": 1,
 					"flow_control": false
 				},
-				"status_led_gpio_pin": 23
+				"status_led_gpio_pin": 27
 			}
 		}
 	],
