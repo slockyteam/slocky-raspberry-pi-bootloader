@@ -5,7 +5,7 @@
 	"device_alias": "Slocky-2539",
 	"web_socket_url": "wss://api-staging.slocky.com",
 	"api_server_url": "https://api-staging.slocky.com",
-	"cpu_monitoring_port": "81",
+	"cpu_monitoring_port": 81,
 	"local_web_server_port": 80,
 	"local_api_server_port": 88,
 	"udp_server_port": 10011,
