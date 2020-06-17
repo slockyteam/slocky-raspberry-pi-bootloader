@@ -1,4 +1,4 @@
-# Slocky Raspberry đuration
+# Slocky Raspberry Bootloader
 
 Created by Luka Penger
 
