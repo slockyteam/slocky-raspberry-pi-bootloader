@@ -104,7 +104,7 @@ npm -v
 ### 14. Install remot3.it:
 
 Email: infoslocky@gmail.com
-Password: YgLzUq7rsj8GVLV
+Password: M@V-lx{e1<L$*-yTVqG<
 
 ```
 sudo apt update
