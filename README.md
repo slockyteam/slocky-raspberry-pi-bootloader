@@ -114,7 +114,8 @@ sudo connectd_installer
 
 Device name like: Slocky-XXXX
 
-Install SSH, HTTP, HTTPS service.
+SSH -> Name: 'SSH' Port '22'
+HTTP -> Name: 'CPU Monitoring' Port '81'
 
 ### 15. Installation for sixfab LTE modem:
 
