@@ -119,9 +119,9 @@ Install SSH, HTTP, HTTPS service.
 ### 15. Installation for sixfab LTE modem:
 
 ```
-wget https://raw.githubusercontent.com/sixfab/Sixfab_PPP_Installer/master/ppp_installer/install.sh
-chmod +x install.sh
-sudo ./install.sh
+wget https://raw.githubusercontent.com/sixfab/Sixfab_PPP_Installer/master/ppp_install_standalone.sh
+sudo chmod +x ppp_install_standalone.sh
+sudo ./ppp_install_standalone.sh
 ```
 
 Communication port is `ttyUSB3`
